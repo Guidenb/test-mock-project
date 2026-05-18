@@ -1,0 +1,10 @@
+Test Scenario ID,Feature,Description,Scenario,Test Data
+T-S001,Login,ตรวจสอบว่า User สามารถ Login ในรูปแบบต่างๆได้ถูกต้องทั้ง Happy case / Unhappy case,"1.Login สำเร็จด้วย Username+Password ที่ถูกต้อง
+2.Login ล้มเหลวเมื่อ Username ไม่สามารถใช้งาน
+3.Login ล้มเหลวเมื่อ Field ว่าง
+4.Login ล้มเหลวเมื่อ Email ไม่มีในระบบ
+5.Login สำเร็จด้วย Problem Username เพื่อดูปัญหาของเว็ปไซต์
+6.Login สำเร็จด้วย Performance Username เพื่อดูความสเถียรของเว็ปไซต์","Valide: standard_user / secret_sauce
+Invalide: problem_user / secret_sauce ,
+locked_out_user / secret_sauce,
+performance_glitch_user/secret_sauce"
