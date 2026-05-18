@@ -1,0 +1,24 @@
+Test Case ID,Function,Description,Pre-Condition,Test Data,Test Step,Expected Result,Actual Result,Status,Test By,Execute Date
+TC-001,Login,ตรวจสอบการเข้า Login สำเร็จ ด้วย Username+Password ที่ถูกต้อง,มีบัญชีอยู่ในระบบ,standard_user / secret_sauce,"1.เข้าสู่เว็ปไซต์ https://www.saucedemo.com/
+2.กรอก Username ถูกต้อง
+3.กรอก Pasword ถูกต้อง
+4.คลิกปุ่ม ""Login""",สามารถเข้าสู่ระบบเรียบร้อย Redirect ไปหน้า Dashbord https://www.saucedemo.com/inventory.html,สามารถเข้าสู่ระบบเรียบร้อยตาม Expect ทุกอย่าง,Pass,Guide,"14/5/2026, 18:33:54"
+TC-002,,ตรวจสอบการLogin ล้มเหลวเมื่อ Username ไม่สามารถใช้งานได้,,locked_out_user/ secret_sauce,"1.เข้าสู่เว็ปไซต์  https://www.saucedemo.com/
+2.กรอก Username ""locked_out_user""
+3.กรอก Password ถูกต้อง
+4.คลิกปุ่ม ""Login""","ไม่สามารถเข้าระบบเว็ปไซต์ https://www.saucedemo.com/inventory.html ได้ / ระบบแสดง Error  Message""Epic sadface: Sorry, this user has been locked out."" /ยังอยู่หน้า Login ",ไม่สามารถเข้าสู่ระบบ https://www.saucedemo.com/inventory.html ได้ / แสดงError  Message ตามExpected Result,Pass,Guide,"14/5/2026, 19:07:34"
+TC-003,,ตรวจสอบการ Login ล้มเหลวเมื่อ Field ว่าง,,,"1.เข้าสู่เว็ปไซต์ https://www.saucedemo.com/
+2.คลิกปุ่ม ""Login""","ไม่สามารถเข้าระบบเว็ปไซต์ https://www.saucedemo.com/inventory.html ได้
+/ ระบบแสดง Error  Message ""Epic sadface: Username is required"" / ยังอยู่หน้า Login",ไม่สามารถเข้าสู่ระบบ https://www.saucedemo.com/inventory.html ได้ / แสดงError  Message ตามExpected Result,Pass,Guide,"14/5/2026, 19:13:54"
+TC-004,,ตรวจสอบการ Login ล้มเหลวเมื่อ Email ไม่มีในระบบ,,,"1.เข้าสู่เว็ปไซต์ https://www.saucedemo.com/
+2.กรอก Username ไม่มีในระบบ
+3.กรอก Password ไม่มีในระบบ
+4.คลิกปุ่ม ""Login""","ไม่สามารถเข้าระบบเว็ปไซต์ https://www.saucedemo.com/inventory.html ได้ /ระบบแสดง Error Messege ""Epic sadface: Username and password do not match any user in this service"" / ยังอยู่หน้า Login",ไม่สามารถเข้าสู่ระบบ https://www.saucedemo.com/inventory.html ได้ / แสดงError  Message ตามExpected Result,Pass,Guide,"14/5/2026, 19:24:42"
+TC-005,,ตรวจสอบการ Login สำเร็จด้วย Problem Username เพื่อดูปัญหาของเว็ปไซต์,มีบัญชีอยู่ในระบบ,problem_user/secret_sauce,"1.เข้าสู่เว็ปไซต์ https://www.saucedemo.com/
+2.กรอก Username ""ploblem_user""
+3.กรอก Pasword ""secret_sauce""
+4.คลิกปุ่ม ""Login""",สามารถเข้าสู่ระบบเรียบร้อย Redirect ไปหน้า Dashbord https://www.saucedemo.com/inventory.html / ระบบตะกร้ามีปัญหาไม่สามารถกดเลือกได้ทุก Item / การแสดงผลรูปภาพ Itemไม่ตรงปก / หน้าcart ไม่แสดงผลและไม่สามารถกดย้อนกลับ ต้องกดReload เท่านั้น,สามารถเข้าสู่ระบบเรียบร้อย/เจอDefectตาม Expect ทุกอย่าง,Pass,Guide,"14/5/2026, 19:37:35"
+TC-006,,ตรวจสอบ Login สำเร็จด้วย Performance Username เพื่อดูความสเถียรของเว็ปไซต์,มีบัญชีอยู่ในระบบ,performance_glitch_user / secret_sauce,"1.เข้าสู่เว็ปไซต์ https://www.saucedemo.com/
+2.กรอก Username ""performance_glitch_user
+3.กรอก Pasword ""secret_sauce""
+4.คลิกปุ่ม ""Login""",สามารถเข้าสู่ระบบเรียบร้อย Redirect ไปหน้า Dashbord https://www.saucedemo.com/inventory.html / ระบบไหลลื่น มีความสเถียร,สามารถเข้าสู่ระบบเรียบร้อย/ระบบไม่สเถียรเกิด Time Out บางจุด / หน้า Cart ไม่แสดงผล,Fail,Guide,"16/5/2026, 19:09:18"
