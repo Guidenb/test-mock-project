@@ -1,0 +1,13 @@
+Test Plan-ระบบ Login,,,
+Project,,Version,Test Plan ID
+Saucedemo web,,V.15,TP-001
+Start Date,,End Date,
+"13/5/2026, 20:24:13",,"13/5/2026, 20:24:20",
+Test By,,Status,
+Guide,,In Progress,
+Object,ตรวจสอบให้ระบบ Login ทำงานถูกต้องตาม Requirement และไม่มี Bug ก่อน Release,,
+Scope,ทดสอบ Login/Logout ,,
+Out of Scope,ทดสอบระบบการชำระเงิน(TP-002),,
+Environment,Chome Version 148 / Windows 11,,
+Entry Criteria,Dev Buile เสร็จแล้ว / Test Data เรียบร้อยแล้ว,,
+Exite Criteria,-,,
